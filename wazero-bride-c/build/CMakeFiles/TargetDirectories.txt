@@ -1,0 +1,4 @@
+C:/Users/CrowF/Desktop/GO/wazero-bride-c/build/CMakeFiles/wazero-bridge.dir
+C:/Users/CrowF/Desktop/GO/wazero-bride-c/build/CMakeFiles/sample.dir
+C:/Users/CrowF/Desktop/GO/wazero-bride-c/build/CMakeFiles/edit_cache.dir
+C:/Users/CrowF/Desktop/GO/wazero-bride-c/build/CMakeFiles/rebuild_cache.dir

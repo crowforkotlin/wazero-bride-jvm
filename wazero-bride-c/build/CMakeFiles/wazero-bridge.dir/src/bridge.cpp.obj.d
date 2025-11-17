@@ -1,0 +1,22 @@
+CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj: \
+ C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\bridge.cpp \
+ D:/program/jdk-17.0.1/include/jni.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ D:/program/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ D:/program/jdk-17.0.1/include/win32/jni_md.h \
+ C:/Users/CrowF/Desktop/GO/wazero-bride-c/vendor/libwazerocore.h \
+ D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ D:/program/mingw64/x86_64-w64-mingw32/include/crtdefs.h
