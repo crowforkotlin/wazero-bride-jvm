@@ -83,6 +83,7 @@ cd wazero-kotlin
 
 ## 📸 Sample Result
 **A screenshot of the successful execution of the sample application, demonstrating the output from Go, C, and Kotlin.**
+
 ![result](docs/sample-result.png)
 
 ---
