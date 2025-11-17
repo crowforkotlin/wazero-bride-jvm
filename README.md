@@ -1,4 +1,4 @@
-# 🌉 Wazero JNI Bridge Demo
+# 🌉 Wazero JNI Bridge
 
 **This project demonstrates how to call a Go WebAssembly runtime ([wazero](https://github.com/wazero/wazero)) from a Kotlin/JVM application. The connection is made possible by a lightweight C++ bridge using the Java Native Interface (JNI).**
 
