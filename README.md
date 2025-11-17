@@ -90,5 +90,5 @@ cd wazero-kotlin
 
 ## 🙏 Acknowledgements
 
-*   **This project heavily relies on the excellent [wazero](https://github.com/wazero/wazero) library, the only dependency-free WebAssembly runtime for Go.**
-*   **Special thanks to [Jesse Wilson (swankjesse)](https://github.com/swankjesse) and [Jake Wharton](https://github.com/JakeWharton) for their pioneering work and the ideas that inspired this JNI bridge approach.**
+*   **This project relies on the excellent [wazero](https://github.com/wazero/wazero) library, the only dependency-free WebAssembly runtime for Go.**
+*   **Special thanks to [Jesse Wilson (swankjesse)](https://github.com/swankjesse) and [Jake Wharton](https://github.com/JakeWharton), the ideas that inspired this JNI bridge approach, and their contributions to the [Zipline](https://github.com/cashapp/zipline) project.**
