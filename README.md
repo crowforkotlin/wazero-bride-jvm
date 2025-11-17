@@ -76,8 +76,8 @@ cd wazero-kotlin
 
 | Action | Command | Description |
 | :--- | :--- | :--- |
-| **Build All** | `sh build_all.sh` | **Cleans and builds the entire project chain: Go library, C++ DLL, and Kotlin app.** |
-| **Run Kotlin App**| `sh run_kotlin.sh` | **Executes the final Kotlin application, assuming all artifacts are already built.** |
+| **Build All** | `sh build.sh` | **Cleans and builds the entire project chain: Go library, C++ DLL, and Kotlin app.** |
+| **Run Kotlin App**| `sh sample.sh` | **Executes the final Kotlin application, assuming all artifacts are already built.** |
 
 ***
 
