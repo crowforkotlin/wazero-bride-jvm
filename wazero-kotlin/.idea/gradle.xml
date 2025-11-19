@@ -10,7 +10,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/wazero-app" />
+            <option value="$PROJECT_DIR$/wazero-app/application" />
+            <option value="$PROJECT_DIR$/wazero-core" />
+            <option value="$PROJECT_DIR$/wazero-core/wazero-common" />
+            <option value="$PROJECT_DIR$/wazero-core/wazero-host" />
+            <option value="$PROJECT_DIR$/wazero-core/wazero-plugin" />
+            <option value="$PROJECT_DIR$/wazero-library" />
           </set>
         </option>
       </GradleProjectSettings>

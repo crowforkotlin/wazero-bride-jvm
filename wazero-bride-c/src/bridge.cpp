@@ -46,12 +46,29 @@ JNIEXPORT jint JNICALL Java_com_bridge_wasmline_WasmBridge_nativeLoadWasm(
 }
 
 
+
 /*
  * Class:     com_bridge_wasmline_WasmBridge
  * Method:    nativeExecuteAdd
  * Signature: (JII)I
  */
 JNIEXPORT jint JNICALL Java_com_bridge_wasmline_WasmBridge_nativeExecuteAdd(
+    JNIEnv *env,
+    jclass clazz,
+    jlong handle,
+    jint a,
+    jint b) {
+    // Directly call the exported Go function.
+    return WazeroBridge_ExecuteAdd(JLONG_TO_HANDLE(handle), a, b);
+}
+
+
+/*
+ * Class:     com_bridge_wasmline_WasmBridge
+ * Method:    nativeExecuteAdd
+ * Signature: (JII)I
+ */
+JNIEXPORT jint JNICALL Java_com_bridge_wasmline_WasmBridge_nativeExecuteLogcat(
     JNIEnv *env,
     jclass clazz,
     jlong handle,

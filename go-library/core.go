@@ -83,6 +83,31 @@ func WazeroBridge_ExecuteAdd(handle uintptr, a C.int, b C.int) C.int {
 	return C.int(results[0])
 }
 
+//export WazeroBridge_ExecuteAdd
+func WazeroBridge_ExecuteLogcat(handle uintptr, a C.int, b C.int) C.int {
+	bridge, ok := bridges[handle]
+	if !ok {
+		return -1 // Error: invalid handle
+	}
+	if bridge.module == nil {
+		return -2 // Error: module not loaded
+	}
+
+	add := bridge.module.ExportedFunction("logcat")
+	if add == nil {
+		return -3 // Error: function not found
+	}
+
+	results, err := add.Call(bridge.ctx, uint64(a), uint64(b))
+	if err != nil {
+		log.Printf("Error calling function: %v", err)
+		return -4 // Error: call failed
+	}
+
+	return C.int(results[0])
+}
+
+
 //export WazeroBridge_Destroy
 func WazeroBridge_Destroy(handle uintptr) {
 	bridge, ok := bridges[handle]
