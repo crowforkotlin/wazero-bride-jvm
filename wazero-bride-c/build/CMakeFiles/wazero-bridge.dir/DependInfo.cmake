@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/bridge.cpp" "CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj" "gcc" "CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj.d"
+  "C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/BridgeJni.cpp" "CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj" "gcc" "CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj.d"
+  "C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/WazeroCore.cpp" "CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj" "gcc" "CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

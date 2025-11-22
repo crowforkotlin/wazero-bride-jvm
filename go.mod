@@ -1,4 +1,4 @@
-module wasm-example
+module wazero-jvm
 
 go 1.25.2
 

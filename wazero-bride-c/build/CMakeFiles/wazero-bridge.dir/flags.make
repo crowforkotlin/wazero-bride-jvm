@@ -6,5 +6,5 @@ CXX_DEFINES = -Dwazero_bridge_EXPORTS
 
 CXX_INCLUDES = @CMakeFiles/wazero-bridge.dir/includes_CXX.rsp
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++14
 

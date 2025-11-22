@@ -1,11 +1,10 @@
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: \
- C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\wazero-sample.cpp \
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj: \
+ C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\WazeroSample.cpp \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iostream \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/requires_hosted.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/pstl/pstl_config.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ostream \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ios \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iosfwd \
@@ -102,19 +101,12 @@ CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/alloc_traits.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/alloc_traits.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_construct.h \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string_view \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functional_hash.h \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/string_view.tcc \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/string_conversions.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdio \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cerrno \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h \
+ D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functional_hash.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.tcc \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/memory_resource.h \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstddef \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator.h \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator_args.h \
- D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tuple \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_classes.tcc \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/system_error \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
@@ -143,6 +135,7 @@ CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_vector.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_bvector.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/vector.tcc \
+ C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/WazeroCore.h \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdint \
  D:/program/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  D:/program/mingw64/x86_64-w64-mingw32/include/stdint.h \

@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/CrowF/Desktop/GO/wazero-bride-c/sample/wazero-sample.cpp" "CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj" "gcc" "CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj.d"
+  "C:/Users/CrowF/Desktop/GO/wazero-bride-c/sample/WazeroSample.cpp" "CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj" "gcc" "CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj.d"
+  "C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/WazeroCore.cpp" "CMakeFiles/sample.dir/src/WazeroCore.cpp.obj" "gcc" "CMakeFiles/sample.dir/src/WazeroCore.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

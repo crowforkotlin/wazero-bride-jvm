@@ -1,68 +1,90 @@
 package crow.wazero.wasmline
 
-import com.bridge.wasmline.WasmBridge
 import java.io.File
 import kotlin.system.measureNanoTime
 
 fun main() {
-    var handle: Long = 0L
-    val wasmPath = "./lib/wazero-crow.wazero.wasmline-wazero-core-wazero-plugin.wasm"
-    val a = 500
-    val b = 599
+    println("=== 🌉 Wazero Bridge Host Sample ===")
 
-    println("+-------------------------------------+")
-    println("|    Kotlin WASM Execution Sample     |" )
-    println("+-------------------------------------+")
+    // ------------------------------------------------------------
+    // 1. Configuration & Validation
+    // ------------------------------------------------------------
+    val wasmPath = "./lib/wazero-crow.wazero.wasmline-wazero-core-wazero-plugin.wasm"
+    val wasmFile = File(wasmPath)
+
+    if (!wasmFile.exists()) {
+        System.err.println("❌ [Fatal] Wasm artifact not found at: ${wasmFile.absolutePath}")
+        System.err.println("   Ensure the 'wazero-plugin' project has been built successfully.")
+        return
+    }
+
+    // ------------------------------------------------------------
+    // 2. Runtime Initialization
+    // ------------------------------------------------------------
+    println("🔄 [Host] Initializing Wazero Runtime (Go/C++)...")
+    val handle: Long = WasmBridge.nativeCreate()
+
+    if (handle == 0L) {
+        System.err.println("❌ [Fatal] Failed to initialize native runtime.")
+        return
+    }
 
     try {
-        // --- STEP 1: Read WASM file ---
-        val wasmFile = File(wasmPath)
-        if (!wasmFile.exists()) {
-            System.err.println("[ERR] STEP 1: WASM file not found at ${wasmFile.absolutePath}!")
-            return
-        }
+        // ------------------------------------------------------------
+        // 3. Module Loading
+        // ------------------------------------------------------------
+        println("📥 [Host] Loading Module (${wasmFile.length()} bytes)...")
         val wasmBytes = wasmFile.readBytes()
-        println("[OK] STEP 1: Read $wasmPath (${wasmBytes.size} bytes)")
 
-        // --- STEP 2: Create wazero instance ---
-        handle = WasmBridge.nativeCreate()
-        if (handle == 0L) {
-            System.err.println("[ERR] STEP 2: nativeCreate() failed! Check Go/C linking.")
-            return
-        }
-        println("[OK] STEP 2: Instance created. Handle: $handle")
+        println(wasmBytes.toHexString())
 
-        // --- STEP 3: Load WASM module ---
-        WasmBridge.nativeLoadWasm(handle, wasmBytes).also { result ->
+
+        val loadDuration = measureNanoTime {
+            val result = WasmBridge.nativeLoadWasm(handle, wasmBytes)
             if (result != 0) {
-                System.err.println("[ERR] STEP 3: nativeLoadWasm() failed with code $result")
-                return
+                throw RuntimeException("Native load failed with error code: $result")
             }
         }
-        println("[OK] STEP 3: WASM module loaded.")
+        println("✅ [Host] Module loaded in ${loadDuration / 1_000_000.0} ms.")
 
-        // --- STEP 4: Execute 'add' function ---
-        println("[RUN] STEP 4: Executing add function: $a + $b...")
-        val executionTime = measureNanoTime {
-            val result = WasmBridge.nativeExecuteAdd(handle, a, b)
-            println("    -> RESULT: $a + $b = $result")
+        // ------------------------------------------------------------
+        // 4. Execution: Rich Path (JSON-RPC)
+        // ------------------------------------------------------------
+        // Simulates a Zipline-style call: Service -> Method -> JSON Arguments.
+        // The Guest (Wasm) is expected to route this to the actual implementation.
+        val serviceName = "Calculator"
+        val methodName = "add"
+        val jsonArgs = "[100, 55]" // Arguments serialized as JSON array
+
+        println("📞 [Host] Invoking: $serviceName.$methodName($jsonArgs)")
+
+        var response: String = ""
+        val execDuration = measureNanoTime {
+            // Transmits String data across the JNI -> C -> Go -> Wasm boundary.
+            response = WasmBridge.nativeCallGuest(
+                handle,
+                serviceName,
+                methodName,
+                jsonArgs
+            )
         }
-        println("    (Tickme) Execution Time: ${executionTime / 1_000_000.0} ms")
 
-    } catch (e: UnsatisfiedLinkError) {
-        System.err.println("\n[!!!] FATAL ERROR: JNI Linkage Issue!")
-        System.err.println("   Please check: 1. DLL loaded? 2. Package/Class/Method names match C++? 3. Function signatures correct?")
-        e.printStackTrace()
+        // ------------------------------------------------------------
+        // 5. Result Handling
+        // ------------------------------------------------------------
+        println("✨ [Host] Response: $response")
+        println("⏱️ [Host] Execution time: ${execDuration / 1_000_000.0} ms")
+
     } catch (e: Exception) {
-        System.err.println("\n[!] UNEXPECTED EXCEPTION:")
+        System.err.println("💥 [Exception] ${e.message}")
         e.printStackTrace()
     } finally {
-        // --- STEP 5: Destroy instance ---
-        if (handle != 0L) {
-            WasmBridge.nativeDestroy(handle)
-            println("[FREE] STEP 5: Instance destroyed.")
-        }
+        // ------------------------------------------------------------
+        // 6. Resource Cleanup
+        // ------------------------------------------------------------
+        // Crucial: Ensures Go resources (Context, Runtime) are freed to prevent leaks.
+        println("🧹 [Host] Shutting down runtime...")
+        WasmBridge.nativeDestroy(handle)
+        println("=== Session Finished ===")
     }
-    println("=====================================")
-    println("           Test Finished             ")
 }

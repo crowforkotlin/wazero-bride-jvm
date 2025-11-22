@@ -21,6 +21,11 @@ extern const char *_GoStringPtr(_GoString_ s);
 /* Start of preamble from import "C" comments.  */
 
 
+#line 3 "bridge.go"
+
+#include <stdlib.h>
+
+#line 1 "cgo-generated-wrapper"
 
 
 /* End of preamble from import "C" comments.  */
@@ -83,9 +88,10 @@ extern "C" {
 #endif
 
 extern __declspec(dllexport) GoUintptr WazeroBridge_Create(void);
-extern __declspec(dllexport) int WazeroBridge_LoadWasm(GoUintptr handle, unsigned char* wasmBytes, int wasmSize);
-extern __declspec(dllexport) int WazeroBridge_ExecuteAdd(GoUintptr handle, int a, int b);
+extern __declspec(dllexport) int WazeroBridge_LoadWasm(GoUintptr handle, unsigned char* data, int size);
 extern __declspec(dllexport) void WazeroBridge_Destroy(GoUintptr handle);
+extern __declspec(dllexport) long long unsigned int WazeroBridge_CallFunc(GoUintptr handle, char* funcName, long long unsigned int* args, int count);
+extern __declspec(dllexport) char* WazeroBridge_CallGuest(GoUintptr handle, char* sName, char* mName, char* args);
 
 #ifdef __cplusplus
 }

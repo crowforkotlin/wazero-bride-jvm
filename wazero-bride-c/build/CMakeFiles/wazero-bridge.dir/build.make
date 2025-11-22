@@ -71,29 +71,46 @@ include CMakeFiles/wazero-bridge.dir/flags.make
 CMakeFiles/wazero-bridge.dir/codegen:
 .PHONY : CMakeFiles/wazero-bridge.dir/codegen
 
-CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj: CMakeFiles/wazero-bridge.dir/flags.make
-CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj: CMakeFiles/wazero-bridge.dir/includes_CXX.rsp
-CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj: C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/bridge.cpp
-CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj: CMakeFiles/wazero-bridge.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj"
-	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj -MF CMakeFiles\wazero-bridge.dir\src\bridge.cpp.obj.d -o CMakeFiles\wazero-bridge.dir\src\bridge.cpp.obj -c C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\bridge.cpp
+CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj: CMakeFiles/wazero-bridge.dir/flags.make
+CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj: CMakeFiles/wazero-bridge.dir/includes_CXX.rsp
+CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj: C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/WazeroCore.cpp
+CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj: CMakeFiles/wazero-bridge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj -MF CMakeFiles\wazero-bridge.dir\src\WazeroCore.cpp.obj.d -o CMakeFiles\wazero-bridge.dir\src\WazeroCore.cpp.obj -c C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\WazeroCore.cpp
 
-CMakeFiles/wazero-bridge.dir/src/bridge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wazero-bridge.dir/src/bridge.cpp.i"
-	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\bridge.cpp > CMakeFiles\wazero-bridge.dir\src\bridge.cpp.i
+CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.i"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\WazeroCore.cpp > CMakeFiles\wazero-bridge.dir\src\WazeroCore.cpp.i
 
-CMakeFiles/wazero-bridge.dir/src/bridge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wazero-bridge.dir/src/bridge.cpp.s"
-	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\bridge.cpp -o CMakeFiles\wazero-bridge.dir\src\bridge.cpp.s
+CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.s"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\WazeroCore.cpp -o CMakeFiles\wazero-bridge.dir\src\WazeroCore.cpp.s
+
+CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj: CMakeFiles/wazero-bridge.dir/flags.make
+CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj: CMakeFiles/wazero-bridge.dir/includes_CXX.rsp
+CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj: C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/BridgeJni.cpp
+CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj: CMakeFiles/wazero-bridge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj -MF CMakeFiles\wazero-bridge.dir\src\BridgeJni.cpp.obj.d -o CMakeFiles\wazero-bridge.dir\src\BridgeJni.cpp.obj -c C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\BridgeJni.cpp
+
+CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.i"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\BridgeJni.cpp > CMakeFiles\wazero-bridge.dir\src\BridgeJni.cpp.i
+
+CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.s"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\BridgeJni.cpp -o CMakeFiles\wazero-bridge.dir\src\BridgeJni.cpp.s
 
 # Object files for target wazero-bridge
 wazero__bridge_OBJECTS = \
-"CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj"
+"CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj" \
+"CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj"
 
 # External object files for target wazero-bridge
 wazero__bridge_EXTERNAL_OBJECTS =
 
-libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj
+libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj
+libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj
 libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/build.make
 libwazero-bridge.dll: D:/program/jdk-17.0.1/lib/jawt.lib
 libwazero-bridge.dll: D:/program/jdk-17.0.1/lib/jvm.lib
@@ -101,7 +118,7 @@ libwazero-bridge.dll: C:/Users/CrowF/Desktop/GO/wazero-bride-c/vendor/libwazeroc
 libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/linkLibs.rsp
 libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/objects1.rsp
 libwazero-bridge.dll: CMakeFiles/wazero-bridge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libwazero-bridge.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libwazero-bridge.dll"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\wazero-bridge.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

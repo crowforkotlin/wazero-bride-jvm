@@ -1,16 +1,24 @@
 #!/bin/bash
 
-# Exit immediately if a command exits with a non-zero status.
+# 遇到错误立即停止
 set -e
 
-go build -buildmode=c-archive -o wazero-bride-c/vendor/libwazerocore.a go-library/core.go
+echo "🛠️  Building Go Static Library..."
 
+go build -buildmode=c-archive -o wazero-bride-c/vendor/libwazerocore.a ./go-library/bridge/bridge.go
+
+echo "✅ Go Build Success."
+
+echo "🛠️  Configuring CMake..."
 cd wazero-bride-c
 
 sh configure.sh
 
+echo "🛠️  Building C++ DLL..."
 sh build.sh
 
-cd ../wazero-kotlin
+echo "✅ C++ Build Success."
 
-./gradlew app:run
+cd .. 
+# cd wazero-kotlin
+# ./gradlew app:run

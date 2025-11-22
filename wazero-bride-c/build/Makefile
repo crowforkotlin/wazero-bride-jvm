@@ -141,53 +141,80 @@ sample/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/build
 .PHONY : sample/fast
 
-sample/wazero-sample.obj: sample/wazero-sample.cpp.obj
-.PHONY : sample/wazero-sample.obj
+sample/WazeroSample.obj: sample/WazeroSample.cpp.obj
+.PHONY : sample/WazeroSample.obj
 
 # target to build an object file
-sample/wazero-sample.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj
-.PHONY : sample/wazero-sample.cpp.obj
+sample/WazeroSample.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj
+.PHONY : sample/WazeroSample.cpp.obj
 
-sample/wazero-sample.i: sample/wazero-sample.cpp.i
-.PHONY : sample/wazero-sample.i
+sample/WazeroSample.i: sample/WazeroSample.cpp.i
+.PHONY : sample/WazeroSample.i
 
 # target to preprocess a source file
-sample/wazero-sample.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/sample/wazero-sample.cpp.i
-.PHONY : sample/wazero-sample.cpp.i
+sample/WazeroSample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/sample/WazeroSample.cpp.i
+.PHONY : sample/WazeroSample.cpp.i
 
-sample/wazero-sample.s: sample/wazero-sample.cpp.s
-.PHONY : sample/wazero-sample.s
+sample/WazeroSample.s: sample/WazeroSample.cpp.s
+.PHONY : sample/WazeroSample.s
 
 # target to generate assembly for a file
-sample/wazero-sample.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/sample/wazero-sample.cpp.s
-.PHONY : sample/wazero-sample.cpp.s
+sample/WazeroSample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/sample/WazeroSample.cpp.s
+.PHONY : sample/WazeroSample.cpp.s
 
-src/bridge.obj: src/bridge.cpp.obj
-.PHONY : src/bridge.obj
+src/BridgeJni.obj: src/BridgeJni.cpp.obj
+.PHONY : src/BridgeJni.obj
 
 # target to build an object file
-src/bridge.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/bridge.cpp.obj
-.PHONY : src/bridge.cpp.obj
+src/BridgeJni.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.obj
+.PHONY : src/BridgeJni.cpp.obj
 
-src/bridge.i: src/bridge.cpp.i
-.PHONY : src/bridge.i
+src/BridgeJni.i: src/BridgeJni.cpp.i
+.PHONY : src/BridgeJni.i
 
 # target to preprocess a source file
-src/bridge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/bridge.cpp.i
-.PHONY : src/bridge.cpp.i
+src/BridgeJni.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.i
+.PHONY : src/BridgeJni.cpp.i
 
-src/bridge.s: src/bridge.cpp.s
-.PHONY : src/bridge.s
+src/BridgeJni.s: src/BridgeJni.cpp.s
+.PHONY : src/BridgeJni.s
 
 # target to generate assembly for a file
-src/bridge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/bridge.cpp.s
-.PHONY : src/bridge.cpp.s
+src/BridgeJni.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/BridgeJni.cpp.s
+.PHONY : src/BridgeJni.cpp.s
+
+src/WazeroCore.obj: src/WazeroCore.cpp.obj
+.PHONY : src/WazeroCore.obj
+
+# target to build an object file
+src/WazeroCore.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/src/WazeroCore.cpp.obj
+.PHONY : src/WazeroCore.cpp.obj
+
+src/WazeroCore.i: src/WazeroCore.cpp.i
+.PHONY : src/WazeroCore.i
+
+# target to preprocess a source file
+src/WazeroCore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/src/WazeroCore.cpp.i
+.PHONY : src/WazeroCore.cpp.i
+
+src/WazeroCore.s: src/WazeroCore.cpp.s
+.PHONY : src/WazeroCore.s
+
+# target to generate assembly for a file
+src/WazeroCore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\wazero-bridge.dir\build.make CMakeFiles/wazero-bridge.dir/src/WazeroCore.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sample.dir\build.make CMakeFiles/sample.dir/src/WazeroCore.cpp.s
+.PHONY : src/WazeroCore.cpp.s
 
 # Help Target
 help:
@@ -199,12 +226,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... sample
 	@echo ... wazero-bridge
-	@echo ... sample/wazero-sample.obj
-	@echo ... sample/wazero-sample.i
-	@echo ... sample/wazero-sample.s
-	@echo ... src/bridge.obj
-	@echo ... src/bridge.i
-	@echo ... src/bridge.s
+	@echo ... sample/WazeroSample.obj
+	@echo ... sample/WazeroSample.i
+	@echo ... sample/WazeroSample.s
+	@echo ... src/BridgeJni.obj
+	@echo ... src/BridgeJni.i
+	@echo ... src/BridgeJni.s
+	@echo ... src/WazeroCore.obj
+	@echo ... src/WazeroCore.i
+	@echo ... src/WazeroCore.s
 .PHONY : help
 
 

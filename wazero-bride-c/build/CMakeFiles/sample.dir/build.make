@@ -71,37 +71,53 @@ include CMakeFiles/sample.dir/flags.make
 CMakeFiles/sample.dir/codegen:
 .PHONY : CMakeFiles/sample.dir/codegen
 
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: CMakeFiles/sample.dir/flags.make
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: CMakeFiles/sample.dir/includes_CXX.rsp
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: C:/Users/CrowF/Desktop/GO/wazero-bride-c/sample/wazero-sample.cpp
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj: CMakeFiles/sample.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj"
-	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj -MF CMakeFiles\sample.dir\sample\wazero-sample.cpp.obj.d -o CMakeFiles\sample.dir\sample\wazero-sample.cpp.obj -c C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\wazero-sample.cpp
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj: CMakeFiles/sample.dir/flags.make
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj: CMakeFiles/sample.dir/includes_CXX.rsp
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj: C:/Users/CrowF/Desktop/GO/wazero-bride-c/sample/WazeroSample.cpp
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj: CMakeFiles/sample.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj -MF CMakeFiles\sample.dir\sample\WazeroSample.cpp.obj.d -o CMakeFiles\sample.dir\sample\WazeroSample.cpp.obj -c C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\WazeroSample.cpp
 
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sample.dir/sample/wazero-sample.cpp.i"
-	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\wazero-sample.cpp > CMakeFiles\sample.dir\sample\wazero-sample.cpp.i
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sample.dir/sample/WazeroSample.cpp.i"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\WazeroSample.cpp > CMakeFiles\sample.dir\sample\WazeroSample.cpp.i
 
-CMakeFiles/sample.dir/sample/wazero-sample.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sample.dir/sample/wazero-sample.cpp.s"
-	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\wazero-sample.cpp -o CMakeFiles\sample.dir\sample\wazero-sample.cpp.s
+CMakeFiles/sample.dir/sample/WazeroSample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sample.dir/sample/WazeroSample.cpp.s"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\CrowF\Desktop\GO\wazero-bride-c\sample\WazeroSample.cpp -o CMakeFiles\sample.dir\sample\WazeroSample.cpp.s
+
+CMakeFiles/sample.dir/src/WazeroCore.cpp.obj: CMakeFiles/sample.dir/flags.make
+CMakeFiles/sample.dir/src/WazeroCore.cpp.obj: CMakeFiles/sample.dir/includes_CXX.rsp
+CMakeFiles/sample.dir/src/WazeroCore.cpp.obj: C:/Users/CrowF/Desktop/GO/wazero-bride-c/src/WazeroCore.cpp
+CMakeFiles/sample.dir/src/WazeroCore.cpp.obj: CMakeFiles/sample.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sample.dir/src/WazeroCore.cpp.obj"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/src/WazeroCore.cpp.obj -MF CMakeFiles\sample.dir\src\WazeroCore.cpp.obj.d -o CMakeFiles\sample.dir\src\WazeroCore.cpp.obj -c C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\WazeroCore.cpp
+
+CMakeFiles/sample.dir/src/WazeroCore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sample.dir/src/WazeroCore.cpp.i"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\WazeroCore.cpp > CMakeFiles\sample.dir\src\WazeroCore.cpp.i
+
+CMakeFiles/sample.dir/src/WazeroCore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sample.dir/src/WazeroCore.cpp.s"
+	D:\program\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\CrowF\Desktop\GO\wazero-bride-c\src\WazeroCore.cpp -o CMakeFiles\sample.dir\src\WazeroCore.cpp.s
 
 # Object files for target sample
 sample_OBJECTS = \
-"CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj"
+"CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj" \
+"CMakeFiles/sample.dir/src/WazeroCore.cpp.obj"
 
 # External object files for target sample
 sample_EXTERNAL_OBJECTS =
 
-sample.exe: CMakeFiles/sample.dir/sample/wazero-sample.cpp.obj
+sample.exe: CMakeFiles/sample.dir/sample/WazeroSample.cpp.obj
+sample.exe: CMakeFiles/sample.dir/src/WazeroCore.cpp.obj
 sample.exe: CMakeFiles/sample.dir/build.make
 sample.exe: C:/Users/CrowF/Desktop/GO/wazero-bride-c/vendor/libwazerocore.a
 sample.exe: CMakeFiles/sample.dir/linkLibs.rsp
 sample.exe: CMakeFiles/sample.dir/objects1.rsp
 sample.exe: CMakeFiles/sample.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sample.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\CrowF\Desktop\GO\wazero-bride-c\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sample.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sample.dir\link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying WASM files to output directory..."
 	D:\program\cmake-4.0.2-windows-x86_64\bin\cmake.exe -E copy_directory C:/Users/CrowF/Desktop/GO/wazero-bride-c/../wasm C:/Users/CrowF/Desktop/GO/wazero-bride-c/build/wasm
 
 # Rule to build all files generated by this target.

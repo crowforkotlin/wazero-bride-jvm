@@ -81,7 +81,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/CrowF/Desktop/GO/wazero-bride-c
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/wazero-bridge
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/wazero-bridge-project
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=D:/program/mingw64/bin/ld.exe
@@ -125,7 +125,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=wazero-bridge
+CMAKE_PROJECT_NAME:STATIC=wazero-bridge-project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=D:/program/mingw64/bin/ranlib.exe
@@ -226,16 +226,16 @@ JAVA_INCLUDE_PATH2:PATH=D:/program/jdk-17.0.1/include/win32
 JAVA_JVM_LIBRARY:FILEPATH=D:/program/jdk-17.0.1/lib/jvm.lib
 
 //Value Computed by CMake
-wazero-bridge_BINARY_DIR:STATIC=C:/Users/CrowF/Desktop/GO/wazero-bride-c/build
+wazero-bridge-project_BINARY_DIR:STATIC=C:/Users/CrowF/Desktop/GO/wazero-bride-c/build
 
 //Value Computed by CMake
-wazero-bridge_IS_TOP_LEVEL:STATIC=ON
+wazero-bridge-project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+wazero-bridge-project_SOURCE_DIR:STATIC=C:/Users/CrowF/Desktop/GO/wazero-bride-c
 
 //Dependencies for the target
 wazero-bridge_LIB_DEPENDS:STATIC=general;D:/program/jdk-17.0.1/lib/jawt.lib;general;D:/program/jdk-17.0.1/lib/jvm.lib;general;C:/Users/CrowF/Desktop/GO/wazero-bride-c/vendor/libwazerocore.a;general;ws2_32;general;userenv;
-
-//Value Computed by CMake
-wazero-bridge_SOURCE_DIR:STATIC=C:/Users/CrowF/Desktop/GO/wazero-bride-c
 
 
 ########################
